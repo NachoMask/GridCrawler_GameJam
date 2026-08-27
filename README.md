@@ -5,6 +5,7 @@
 <img width="356" height="200" alt="img2" src="https://github.com/user-attachments/assets/0e34dea1-6cb2-460f-94b0-4d75bc7dadf5" />
 <img width="356" height="200" alt="img3" src="https://github.com/user-attachments/assets/13fec04b-afef-4be1-b4b5-fe92868bca95" />
 
+<br>
 
 **프로젝트 개요**
 언리얼 엔진 5를 이용해 개발한 3D 탑다운 로그라이크 게임.
@@ -13,6 +14,7 @@
 
 - 시연 영상: https://youtu.be/D3uNCjeg6vk?si=uPEh_aadFPJ1cMt5
 
+<br>
 
 **담당 작업**
 - 전투 및 스킬 시스템 구현
@@ -21,6 +23,7 @@
 - 성능 최적화
 
 # 기술적 사항
+<br>
 
 ## 1. Strategy 패턴을 활용한 조합형 스킬 시스템 설계
 
@@ -47,6 +50,7 @@ Strategy 패턴을 적용하여 스킬 대상(Delivery)과 스킬 효과(Effect)
 기존 Delivery와 Effect를 재사용하거나 필요한 파생 클래스만을 구현하면 새로운 스킬을 추가할 수 있도록 확장성을 확보했다.
 Delivery 1종과 Effect 1종의 조합만으로도 9개의 스킬을 제작함으로써 기능 재사용성 또한 확인할 수 있었다.
 
+<br>
 
 ## 2. Flow Field 기반 AI 경로 탐색 최적화
 
@@ -73,6 +77,7 @@ Delivery 1종과 Effect 1종의 조합만으로도 9개의 스킬을 제작함�
 다수의 적이 동일한 이동 정보를 공유하도록 설계해 경로 계산 횟수를 줄였으며 이동이 불가능한 상황에서는 즉시 A* 수행하지 않고 일정 시간 대기하도록 하여 빈번한 재탐색도 방지했다.
 이를 통해 다수의 적이 동시에 이동하는 상황에서도 경로 탐색 비용 증가를 효과적으로 억제할 수 있다.
 
+<br>
 
 ## 3. BattleManager 기반 스킬 실행 파이프라인 설계
 
@@ -99,3 +104,5 @@ BattleManager가 실행 중인 스킬 Context를 중앙에서 관리하는 파�
 각 시스템이 스킬 정보를 직접 관리하지 않고도 자신의 역할만 수행할 수 있었다. Skill ID를 기반으로 각 스킬의 Context를 개별적으로 관리하여
 여러 캐릭터가 동시에 스킬을 사용하더라도 혼선없이 처리할 수 있었다. 또한 애니메이션의 Notify를 추가하거나 발생 시점만 조정하는 것으로
 다단 히트, 연속 효과 등 다양한 연출을 구성할 수 있었다.
+
+<br>
