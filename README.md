@@ -13,7 +13,7 @@
 
 격자(Grid) 기반 이동과 확장 가능한 스킬 시스템을 중심으로 구현했으며, 다수의 적 AI가 동시에 등장하는 전투를 고려해 경로 탐색 최적화를 진행했다.
 
-- 시연 영상: [https://youtu.be/D3uNCjeg6vk?si=uPEh_aadFPJ1cMt5](https://youtu.be/D3uNCjeg6vk?si=uPEh_aadFPJ1cMt5)
+- 시연 영상: https://youtu.be/8sgF806Z--w
 
 <br>
 
